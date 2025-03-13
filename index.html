@@ -13,9 +13,7 @@
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
-      integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy"
-      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>University</title>
   </head>
@@ -23,8 +21,8 @@
     <section class="header">
       <nav>
         <a href="index.html"><img src="images/logo.png" /></a>
-        <i class="fa-solid fa-times"></i>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li>
               <a href="">HOME</a>
@@ -47,7 +45,7 @@
           </ul>
         </div>
 
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
       <div class="text-box">
         <h1>World's biggest University</h1>
@@ -60,6 +58,19 @@
         <a href="" class="hero-btn">Visit us now</a>
       </div>
     </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+    </script>
+
     <h1>Hello World!</h1>
   </body>
 </html>
