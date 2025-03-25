@@ -301,4 +301,14 @@ h3{
     .row{
         flex-direction: column;
     }
+
+
+    .testimonial-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
 }
+
+git add *
+git commit -m "making cta section"
+git push -u origin main
