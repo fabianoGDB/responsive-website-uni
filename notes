@@ -1,3 +1,3 @@
 git add *
-git commit -m "making html and style with css the about page"
+git commit -m "making the pages blog, contact and course"
 git push -u origin main
